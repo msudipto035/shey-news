@@ -1,133 +1,125 @@
 import React from 'react'
 import './Profile.scss'
+import profileImage from '../assets/sudipto.jpg'
 
 var messageBox = document.querySelector('.js-message');
   var btn = document.querySelector('.js-message-btn');
   var card = document.querySelector('.js-profile-card');
   var closeBtn = document.querySelectorAll('.js-message-close');
 
-  btn.addEventListener('click',function (e) {
-      e.preventDefault();
-      card.classList.add('active');
-  });
+ 
 
-  closeBtn.forEach(function (element, index) {
-     console.log(element);
-      element.addEventListener('click',function (e) {
-          e.preventDefault();
-          card.classList.remove('active');
-      });
-  });
+ 
 
 function Profile() {
     return (
         <div>
-            <div class="wrapper">
-  <div class="profile-card js-profile-card">
-    <div class="profile-card__img">
-      <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg" alt="profile card"/>
+            <div className="wrapper">
+  <div className="profile-card js-profile-card">
+    <div className="profile-card__img">
+      <img src={profileImage} alt="profile card"/>
     </div>
 
-    <div class="profile-card__cnt js-profile-cnt">
-      <div class="profile-card__name">Muhammed Erdem</div>
-      <div class="profile-card__txt">Front-end Developer from <strong>Mesopotamia</strong></div>
-      <div class="profile-card-loc">
-        <span class="profile-card-loc__icon">
-          <svg class="icon"><use xlinkHref="#icon-location"></use></svg>
+    <div className="profile-card__cnt js-profile-cnt">
+      <div className="profile-card__name">Sudipto Mondal (Bapi Fan) </div>
+      <div className="profile-card__txt">Front-end Developer from <strong>Kolkata</strong></div>
+      <div className="profile-card-loc">
+        <span className="profile-card-loc__icon">
+          <svg className="icon"><use xlinkHref="#icon-location"></use></svg>
         </span>
 
-        <span class="profile-card-loc__txt">
-          Istanbul, Turkey
+        <span className="profile-card-loc__txt">
+          Kolkata, India
         </span>
       </div>
 
-      <div class="profile-card-inf">
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title">1598</div>
-          <div class="profile-card-inf__txt">Followers</div>
+      <div className="profile-card-inf">
+        <div className="profile-card-inf__item">
+          <div className="profile-card-inf__title">69</div>
+          <div className="profile-card-inf__txt">Followers</div>
         </div>
 
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title">65</div>
-          <div class="profile-card-inf__txt">Following</div>
+        <div className="profile-card-inf__item">
+          <div className="profile-card-inf__title">0</div>
+          <div className="profile-card-inf__txt">Following</div>
         </div>
 
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title">123</div>
-          <div class="profile-card-inf__txt">Articles</div>
+        <div className="profile-card-inf__item">
+          <div className="profile-card-inf__title">69</div>
+          <div className="profile-card-inf__txt">Articles</div>
         </div>
 
-        <div class="profile-card-inf__item">
-          <div class="profile-card-inf__title">85</div>
-          <div class="profile-card-inf__txt">Works</div>
+        <div className="profile-card-inf__item">
+          <div className="profile-card-inf__title">691</div>
+          <div className="profile-card-inf__txt">Works</div>
         </div>
       </div>
 
-      <div class="profile-card-social">
-        <a href="https://www.facebook.com/iaMuhammedErdem" class="profile-card-social__item facebook" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-facebook"></use></svg>
+      <div className="profile-card-social">
+        <a href="https://www.facebook.com/profile.php?id=100010803128879" className="profile-card-social__item facebook" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-facebook"></use></svg>
           </span>
         </a>
 
-        <a href="https://twitter.com/iaMuhammedErdem" class="profile-card-social__item twitter" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-twitter"></use></svg>
+        <a href="#" className="profile-card-social__item twitter" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-twitter"></use></svg>
           </span>
         </a>
 
-        <a href="https://www.instagram.com/iamuhammederdem" class="profile-card-social__item instagram" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-instagram"></use></svg>
+        <a href="#" className="profile-card-social__item instagram" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-instagram"></use></svg>
           </span>
         </a>
 
-        <a href="https://www.behance.net/iaMuhammedErdem" class="profile-card-social__item behance" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-behance"></use></svg>
+        <a href="#" className="profile-card-social__item behance" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-behance"></use></svg>
           </span>
         </a>
 
-        <a href="https://github.com/muhammederdem" class="profile-card-social__item github" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-github"></use></svg>
+        <a href="https://github.com/msudipto035" className="profile-card-social__item github" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-github"></use></svg>
           </span>
         </a>
 
-        <a href="https://codepen.io/JavaScriptJunkie" class="profile-card-social__item codepen" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-codepen"></use></svg>
+        <a href="#" className="profile-card-social__item codepen" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-codepen"></use></svg>
           </span>
         </a>
 
-        <a href="http://muhammederdem.com.tr/" class="profile-card-social__item link" target="_blank">
-          <span class="icon-font">
-              <svg class="icon"><use xlinkHref="#icon-link"></use></svg>
+        <a href="#" className="profile-card-social__item link" target="_blank">
+          <span className="icon-font">
+              <svg className="icon"><use xlinkHref="#icon-link"></use></svg>
           </span>
         </a>
 
       </div>
 
-      <div class="profile-card-ctr">
-        <button class="profile-card__button button--blue js-message-btn" onClick={function (e) {
+      <div className="profile-card-ctr">
+        <button className="profile-card__button button--blue js-message-btn" onClick={function (e) {
       e.preventDefault();
       card.classList.add('active');
   }}>Message</button>
-        <button class="profile-card__button button--orange">Follow</button>
+        <button className="profile-card__button button--orange">Follow</button>
       </div>
     </div>
 
-    <div class="profile-card-message js-message" onClick={function (e) {
+    <div className="profile-card-message js-message" onClick={function (e) {
       e.preventDefault();
       card.classList.add('active');
   }}>
-      <form class="profile-card-form">
-        <div class="profile-card-form__container">
+      <form className="profile-card-form">
+        <div className="profile-card-form__container">
           <textarea placeholder="Say something..."></textarea>
         </div>
 
-        <div class="profile-card-form__bottom">
-          <button class="profile-card__button button--blue js-message-close" onClick={function (element, index) {
+        <div className="profile-card-form__bottom">
+          <button className="profile-card__button button--blue js-message-close" onClick={function (element, index) {
      console.log(element);
       element.addEventListener('click',function (e) {
           e.preventDefault();
@@ -137,7 +129,7 @@ function Profile() {
             Send
           </button>
 
-          <button class="profile-card__button button--gray js-message-close" onClick={function (element, index) {
+          <button className="profile-card__button button--gray js-message-close" onClick={function (element, index) {
      console.log(element);
       element.addEventListener('click',function (e) {
           e.preventDefault();
@@ -149,7 +141,7 @@ function Profile() {
         </div>
       </form>
 
-      <div class="profile-card__overlay js-message-close" onClick={function (element, index) {
+      <div className="profile-card__overlay js-message-close" onClick={function (element, index) {
      console.log(element);
       element.addEventListener('click',function (e) {
           e.preventDefault();
